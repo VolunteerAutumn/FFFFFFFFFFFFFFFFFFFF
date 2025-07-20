@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+body > .Menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  background-color: #808080;
+  overflow: hidden;
+  transition: width 1s;
+  z-index: 1000;
+}
+
+.Menu_Header {
+	font-family: Arial, sans-serif;
+	background-color: #808080;
+	color: white;
+	font-size: 14px;
+	font-weight: normal;
+	width: 180px;
+	height: 60px;
+	margin: 0;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+}
+
+body > .Menu:hover {
+  width: 222px;
+}
+
+body > .Menu > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body > .Menu > ul > li {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding-left: 10px;
+  color: white;
+  gap: 10px;
+  padding: 10px;
+  background-color: #808080;
+  transition: background-color;
+}
+
+body > .Menu > ul > li:hover {
+  background-color: #5e5e5e;
+}
+
+body > .Menu > ul > li {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+.content {
+	margin-left: 160px;
+	margin-top: 50px;
+	margin-right: 80px;
+}
+
+h2 {
+	margin-bottom: 30px;
+}
